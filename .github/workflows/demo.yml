@@ -7,5 +7,5 @@ jobs:
      - name: print hello world
        run: |
          echo "hello world"
-         echo "Hello vcube
+         echo "Hello vcube"
   
