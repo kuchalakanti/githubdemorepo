@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: this is test job
         run: echo " this is test job"
-   deploy:
+  deploy:
       runs-on: ubuntu-latest
       steps:
         - name: this is delpoy job
