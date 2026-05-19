@@ -1,11 +1,21 @@
-name: demo
+name: jobs
 on: workflow_dispatch
 jobs:
   build:
    runs-on: ubuntu-latest
    steps:
-     - name: print hello world
-       run: |
-         echo "hello world"
-         echo "Hello vcube"
+     - name: "this is build job"
+       run: echo " this is build job"
+  test:
+   runs-on: ubuntu-latest
+   steps:
+     - name: "this is test job"
+       run: echo " this is test job"
+  
+    deploy:
+   runs-on: ubuntu-latest
+   steps:
+     - name: "this is delpoy job"
+       run: echo " this is deploy job"
+
   
