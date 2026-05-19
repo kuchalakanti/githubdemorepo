@@ -2,11 +2,11 @@
 name: jobs
 on: workflow_dispatch
 jobs:
-  build:
+  context-demo:
     runs-on: ubuntu-latest
     steps:
       - name: this is build job
-        run: echo "this is my name ${{ secrets.DOCKER_PASSWORD }}"
+        run: echo "this workflow triggered by ${{github.actor}}"
 
 
   
