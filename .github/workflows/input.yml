@@ -1,9 +1,14 @@
 name: input
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+     environment:
+        description: Choose the eniornment to deploy
+        required: true
+        default: dev
 jobs:
   inputparam:
    runs-on: ubuntu-latest
    steps:
      - name: build
-       run: echo " this job executed on dev"
+       run: echo " this job executed on ${{ inputs.environment }}""
