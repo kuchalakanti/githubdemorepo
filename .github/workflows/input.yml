@@ -6,6 +6,11 @@ on:
         description: Choose the eniornment to deploy
         required: true
         default: dev
+        type: choice
+        options:
+          - dev
+          - main
+          - qa
      artifact_tgs:
         description: Choose the eniornment to deploy
         required: true
