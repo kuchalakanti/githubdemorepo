@@ -1,5 +1,6 @@
 name: input
-on: workflow_dispatch
+on:
+  workflow_dispatch
 jobs:
   inputparam:
    runs-on: ubuntu-latest
