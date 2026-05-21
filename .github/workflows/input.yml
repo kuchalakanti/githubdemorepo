@@ -6,9 +6,13 @@ on:
         description: Choose the eniornment to deploy
         required: true
         default: dev
+     artifact_tgs:
+        description: Choose the eniornment to deploy
+        required: true
+        default: 0.0.1
 jobs:
   inputparam:
    runs-on: ubuntu-latest
    steps:
      - name: build
-       run: echo "this job executed on ${{ inputs.environment }}"
+       run: echo "this job uses ${{ inputs.artifact_tgs}} executed on ${{ inputs.environment }}"
